@@ -121,8 +121,8 @@ module "security" {
   app_subnet_id       = module.app_spoke.subnet_id
   sql_subnet_id       = module.sqldb_spoke.subnet_id
   web_subnet_cidr     = var.web_subnet_cidr
+  web_address_space   = var.web_address_space
   app_subnet_cidr     = var.app_subnet_cidr
-  sql_address_space   = var.sql_address_space
   tags                = local.common_tags
 }
 
