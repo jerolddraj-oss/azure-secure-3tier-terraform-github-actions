@@ -1,0 +1,10 @@
+subscription_id    = "00000000-0000-0000-0000-000000000000"
+location           = "East US"
+name_prefix        = "secure3tier"
+admin_username     = "azureadmin"
+ssh_public_key     = "ssh-rsa REPLACE_WITH_YOUR_PUBLIC_KEY"
+sql_admin_username = "sqlbootstrapadmin"
+# Do not commit real secrets. Supply passwords and PFX via GitHub Actions secrets.
+sql_admin_password = "REPLACE_WITH_A_LONG_RANDOM_SECRET"
+tls_certificate_pfx_base64 = "REPLACE_WITH_BASE64_PFX"
+tls_certificate_password = "REPLACE_WITH_PFX_PASSWORD"
