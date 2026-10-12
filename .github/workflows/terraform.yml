@@ -41,12 +41,12 @@ jobs:
           for d in environments/prod modules/* modules/hub-network/peering modules/security/routes; do
             [ -d "$d" ] || continue
             terraform -chdir="$d" init -backend=false
-          terraform -chdir="$d" validate
+            terraform -chdir="$d" validate
           done
       - uses: terraform-linters/setup-tflint@v4
       - run: tflint --init
       - run: tflint --recursive
-      - uses: aquasecurity/trivy-action@0.28.0
+      - uses: aquasecurity/trivy-action@0.35.0
         with:
           scan-type: config
           scan-ref: .
