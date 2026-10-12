@@ -1,0 +1,9 @@
+variable "resource_group_name" { type = string }
+variable "hub_vnet_name" { type = string }
+variable "hub_vnet_id" { type = string }
+variable "web_vnet_name" { type = string }
+variable "web_vnet_id" { type = string }
+variable "app_vnet_name" { type = string }
+variable "app_vnet_id" { type = string }
+variable "sql_vnet_name" { type = string }
+variable "sql_vnet_id" { type = string }
