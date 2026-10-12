@@ -1,0 +1,4 @@
+subscription_id = "00000000-0000-0000-0000-000000000000"
+location = "East US"
+name_prefix = "secure3tier"
+# Supply credentials/certificates through TF_VAR_* secrets in CI.

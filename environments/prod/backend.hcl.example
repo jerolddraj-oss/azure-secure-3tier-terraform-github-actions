@@ -1,0 +1,6 @@
+resource_group_name  = "REPLACE_WITH_STATE_RG"
+storage_account_name = "REPLACE_WITH_UNIQUE_STORAGE_ACCOUNT"
+container_name       = "tfstate"
+key                  = "secure3tier/prod.tfstate"
+use_oidc             = true
+use_azuread_auth     = true
